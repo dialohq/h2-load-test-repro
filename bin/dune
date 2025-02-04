@@ -1,0 +1,10 @@
+(executable
+ (name client)
+ (modules client)
+ (libraries h2_load_test)
+ )
+
+(executable
+ (name listen)
+ (modules listen)
+ (libraries h2_load_test))

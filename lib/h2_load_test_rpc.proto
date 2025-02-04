@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+message Packet {
+	double timestamp = 1;
+	bytes audio = 2;
+}
+
+service H2LoadTest {
+	rpc Run(stream Packet) returns (stream Packet);
+}
